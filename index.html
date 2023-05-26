@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vinay's Portfolio</title>
+  </head>
+  <body>
+    <section id="banner">
+      <img class="logo" src="./images/logo.png" alt="logo" />
+      <div class="banner-text">
+        <h1>My Portfolio</h1>
+        <br />
+        <p>
+          Hi, My name is Vinay, <br />
+          I'm a software developer
+        </p>
+        <div class="banner-btn">
+          <a href="./construction.html" class="main-btn"><span></span>Resume</a>
+          <a href="#contact" class="main-btn"><span></span>Contact Me</a>
+        </div>
+      </div>
+    </section>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="#banner">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="./construction.html">PROJECTS</a></li>
+          <li><a href="./construction.html">EXTRAS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuBtn">
+      <img src="./images/menu.png" alt="menu" id="menu" />
+    </div>
+    <!-- About -->
+    <section id="about">
+      <h1>About Me</h1>
+      <div class="about-box">
+        <div class="about-left">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo quos
+            assumenda aspernatur minus illum mollitia! Vero, at! Quod ratione
+            id, vel error ipsa voluptate magnam dicta voluptatibus accusamus
+            laboriosam explicabo.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo quos
+            assumenda aspernatur minus illum mollitia! Vero, at! Quod ratione
+            id, vel error ipsa voluptate magnam dicta voluptatibus accusamus
+            laboriosam explicabo.
+          </p>
+        </div>
+        <div class="about-right">
+          <a href="https://www.linkedin.com/in/vinay-b-059552209" target="_blank"><img class="about-icon" src="./images/socials/linkdin.png" alt="Linkdin" /></a>
+          <a href="https://github.com/VinayB2" target="_blank"><img class="about-icon" src="./images/socials/github0.png" alt="github" /></a>
+          <a href="https://www.instagram.com/vinay_b54/" target="_blank"><img class="about-icon" src="./images/socials/insta.png" alt="instagram" /></a>
+          <a href="https://m.facebook.com/profile.php?id=100057622865894" target="_blank"><img class="about-icon" src="./images/socials/fb.png" alt="facebook" /></a>
+          <a href="mailto:vinay2190003@gmail.com" target="_blank"><img class="about-icon mail" src="./images/socials/mail.png" alt="email" /></a>
+        </div>
+      </div>
+      <hr />
+      <h2 class="skill-head">Skills</h2>
+      <div class="skill-container">
+        <div class="skill-box">
+          <div class="skill-item">
+            <img src="./images/skills/java.png" alt="" />
+          </div>
+          <div class="skill-item">
+            <img src="./images/skills/html.png" alt="" />
+          </div>
+          <div class="skill-item">
+            <img src="./images/skills/css.png" alt="" />
+          </div>
+          <div class="skill-item">
+            <img src="./images/skills/js.png" alt="" />
+          </div>
+          <div class="skill-item">
+            <img src="./images/skills/bootstrap.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- contact -->
+      <section class="contact" id="contact">
+        <div class="contact-form">
+          <form action="./construction.html">
+            <h2 class="form-title">Contact Me</h2>
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+            <br><br>
+            <input type="email" name="email" id="email" placeholder="xyz@gmail.com"><br>
+            <input id="submit" type="submit" value="Submit">
+        </div>
+      </section>
+    </section>
+    <footer id="footer">
+      <div class="footer-content">
+        <a href="https://www.linkedin.com/in/vinay-b-059552209" target="_blank"><img class="about-icon" src="./images/socials/linkdin.png" alt="Linkdin" /></a>
+
+          <a href="https://github.com/VinayB2" target="_blank"><img class="about-icon" src="./images/socials/github0.png" alt="github" /></a>
+
+          <a href="https://www.instagram.com/vinay_b54/" target="_blank"><img class="about-icon" src="./images/socials/insta.png" alt="instagram" /></a>
+          <a href="https://m.facebook.com/profile.php?id=100057622865894" target="_blank"><img class="about-icon" src="./images/socials/fb.png" alt="facebook" /></a>
+          <a href="mailto:vinay2190003@gmail.com" target="_blank"><img class="about-icon mail" src="./images/socials/mail.png" alt="email" /></a>
+      </div>
+      <div class="footer-txt">© 2023 My Portfolio. All Rights Reserved</div>
+    </footer>
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var sideNav = document.getElementById("sideNav");
+      var menu = document.getElementById("menu");
+      sideNav.style.right = "-250px";
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+          menu.src = "./images/close.png";
+        } else {
+          sideNav.style.right = "-250px";
+          menu.src = "./images/menu.png";
+        }
+      };
+    </script>
+  </body>
+</html>
